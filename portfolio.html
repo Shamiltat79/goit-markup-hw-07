@@ -14,226 +14,221 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Портфоліо</title>
   </head>
   <body>
-    <header class="portfolio">
-      <div class="page-header-portfolio">
-        <nav class="nav-container-portfolio">
-          <a href="/" class="headerlink-portfolio"> <span class="logotype">Web</span>Studio </a>
-          <ul class="navlist list">
-            <li class="navlist-item">
-              <a href="./index.html" class="nav-link">Студия</a>
-            </li>
-            <li class="navlist-item">
-              <a href="./portfolio.html" class="nav-link current">Портфолио</a>
-            </li>
-            <li class="navlist-item">
-              <a href="#" class="nav-link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header-contacts-portfolio">
-          <a href="mailto:info@devstudio.com" class="mail-link"
-            ><svg class="mail-icon">
+    <header class=" portfolio">
+      <div class="page-header">
+        <a href="./index.html" class="logo page-header__logo"> <span class="logo__label">Web</span>Studio </a>
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a href="./index.html" class="nav-list__link link ">Студия</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="./portfolio.html" class="nav-list__link link current">Портфолио</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link link">Контакты</a>
+          </li>
+        </ul>
+        <div class="header-contacts">
+          <a href="mailto:info@devstudio.com" class="header-contacts__link">
+            <svg class="header-contacts__icon" width="16" height="12" aria-hidden="true">
               <use href="./images/symbol-defs.svg#icon-envelope"></use></svg
             >info@devstudio.com</a
           >
-          <a href="tel:+380961111111" class="tel-link">
-            <svg class="tel-icon">
-              <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg
-            >+38 096 111 11 11</a
+          <a href="tel:+380961111111" class="header-contacts__link">
+            <svg class="header-contacts__icon" width="16" height="12" aria-hidden="true">
+              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+            </svg>
+            +38 096 111 11 11</a
           >
+          
         </div>
       </div>
     </header>
     <!--sections-->
-    <section class="works">
-      <div class="work-examples">
-        <ul class="button-list list">
-          <li class="button-item"><button type="button" class="navbutton">Все</button></li>
-          <li class="button-item"><button type="button" class="navbutton">Веб-сайты</button></li>
-          <li class="button-item"><button type="button" class="navbutton">Приложения</button></li>
-          <li class="button-item"><button type="button" class="navbutton">Дизайн</button></li>
-          <li class="button-item"><button type="button" class="navbutton">Маркетинг</button></li>
-        </ul>
+    <section class="section">
+      <div class="works">
+        <div class="works__navbutton">
+          <button type="button" class="navbutton">Все</button>
+          <button type="button" class="navbutton">Веб-сайты</button>
+          <button type="button" class="navbutton">Приложения</button>
+          <button type="button" class="navbutton">Маркетинг</button>
+        </div>
 
-        <ul class="example-list list">
-          <li class="example-items">
+        <ul class="grid list">
+          <li class="grid__items">
             <div class="thumb-example">
               <img src="./images/tehnokrack.jpg" alt="Комп'ютер із веб сторінкою" width="368" />
-              <div class="example-overlay">
-                <p>
+              <div class="thumb-example__overlay">
+                <p class="thumb-example__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
                   лице.
                 </p>
               </div>
             </div>
-            <div class="item-title">
-              <h3>Технокряк</h3>
-              <p>Веб-сайт</p>
+            <div class="description">
+              <h3 class="description__title">Технокряк</h3>
+              <p class="description__text">Веб-сайт</p>
             </div>
           </li>
-          <li class="example-items">
+          <li class="grid__items">
             <div class="thumb-example">
               <img src="./images/neworlean.jpg" alt="Постер з баскетболістами" width="368" />
-              <div class="example-overlay"></div>
+              <div class="thumb-example__overlay"></div>
             </div>
-            <div class="item-title">
-              <h3>Постер New Orlean vs Golden Star</h3>
-              <p>Дизайн</p>
+            <div class="description">
+              <h3 class="description__title">Постер New Orlean vs Golden Star</h3>
+              <p class="description__text">Дизайн</p>
             </div>
           </li>
-          <li class="example-items">
+          <li class="grid__items">
             <div class="thumb-example">
               <img
                 src="./images/seafood.jpg"
                 alt="Логотип та назва для ресторану морепродуктів"
                 width="368"
               />
-              <div class="example-overlay"></div>
+              <div class="thumb-example__overlay"></div>
             </div>
-            <div class="item-title">
-              <h3>Ресторан Seafood</h3>
-              <p>Приложение</p>
+            <div class="description">
+              <h3 class="description__title">Ресторан Seafood</h3>
+              <p class="description__text">Приложение</p>
             </div>
           </li>
-          <li class="example-items">
+          <li class="grid__items">
             <div class="thumb-example">
               <img src="./images/prime.jpg" alt="Навушники" width="368" />
-              <div class="example-overlay"></div>
+              <div class="thumb-example__overlay"></div>
             </div>
-            <div class="item-title">
-              <h3>Проект Prime</h3>
-              <p>Маркетинг</p>
+            <div class="description">
+              <h3 class="description__title">Проект Prime</h3>
+              <p class="description__text">Маркетинг</p>
             </div>
           </li>
-          <li class="example-items">
+          <li class="grid__items">
             <div class="thumb-example">
               <img src="./images/boxes.jpg" alt="Коробки" width="368" />
-              <div class="example-overlay"></div>
+              <div class="thumb-example__overlay"></div>
             </div>
-            <div class="item-title">
-              <h3>Проект Boxes</h3>
-              <p>Приложение</p>
+            <div class="description">
+              <h3 class="description__title">Проект Boxes</h3>
+              <p class="description__text">Приложение</p>
             </div>
           </li>
-          <li class="example-items">
+          <li class="grid__items">
             <div class="thumb-example">
               <img
                 src="./images/inspiration.jpg"
                 alt="Монітор з зображенням мапи на екрані"
                 width="368"
               />
-              <div class="example-overlay"></div>
+              <div class="thumb-example__overlay"></div>
             </div>
-            <div class="item-title">
-              <h3>Inspiration has no Borders</h3>
-              <p>Веб-сайт</p>
+            <div class="description">
+              <h3 class="description__title">Inspiration has no Borders</h3>
+              <p class="description__text">Веб-сайт</p>
             </div>
           </li>
-          <li class="example-items">
+          <li class="grid__items">
             <div class="thumb-example">
               <img src="./images/limited.jpg" alt="Глянцевий журнал" width="368" />
-              <div class="example-overlay"></div>
+              <div class="thumb-example__overlay"></div>
             </div>
-            <div class="item-title">
-              <h3>Издание Limited Edition</h3>
-              <p>Дизайн</p>
+            <div class="description">
+              <h3 class="description__title">Издание Limited Edition</h3>
+              <p class="description__text">Дизайн</p>
             </div>
           </li>
-          <li class="example-items">
+          <li class="grid__items">
             <div class="thumb-example">
               <img src="./images/lab.jpg" alt="Етикетка з написом LABEL TAG" width="368" />
-              <div class="example-overlay"></div>
+              <div class="thumb-example__overlay"></div>
             </div>
-            <div class="item-title">
-              <h3>Проект LAB</h3>
-              <p>Маркетинг</p>
+            <div class="description">
+              <h3 class="description__title">Проект LAB</h3>
+              <p class="description__text">Маркетинг</p>
             </div>
           </li>
-          <li class="example-items">
+          <li class="grid__items">
             <div class="thumb-example">
               <img
                 src="./images/growingbusiness.jpg"
                 alt="Руки людини, яка працює на комп'ютері"
                 width="368"
               />
-              <div class="example-overlay"></div>
+              <div class="thumb-example__overlay"></div>
             </div>
-            <div class="item-title">
-              <h3>Growing Business</h3>
-              <p>Приложение</p>
+            <div class="description">
+              <h3 class="description__title">Growing Business</h3>
+              <p class="description__text">Приложение</p>
             </div>
           </li>
         </ul>
       </div>
     </section>
-    <footer>
-      <div class="footer-container">
-        <div class="footer-logotype">
-          <a href="/" class="footerlink">
-            <span class="logotype-footer">Web</span><span class="footer-logo"> Studio</span></a
-          >
-          <div class="footer-adress">
-            <address class="contacts">
-              <p>г. Киев, пр-т Леси Украинки, 26</p>
-              <a href="mailto:info@example.com" class="mail-link-footer">info@example.com</a>
-              <a href="tel:+380991111111" class="tel-footer">+38 099 111 11 11</a>
-            </address>
+  <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__adress">
+            <a href="/" class="logo">
+              <span class="logo__label">Web</span><span class="logo__label secondary">Studio</span></a>
+           
+              <address class="footer__contacts">
+                <span class="footer__text">г. Киев, пр-т Леси Украинки, 26</span>
+                <a href="mailto:info@example.com" class="footer__mail">info@example.com</a>
+                <a href="tel:+380991111111" class="footer__tel">+38 099 111 11 11</a>
+              </address>
+           
           </div>
-        </div>
-        <div class="footer-social">
-          <div class="footer-title"><h3>ПРИСОЕДИНЯЙТЕСЬ</h3></div>
-          <ul class="footerlink-list list">
-            <li>
-              <a href="#" class="footerlink-item"
-                ><svg class="footer-icon">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="footerlink-item"
-                ><svg class="footer-icon">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="footerlink-item"
-                ><svg class="footer-icon">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="footerlink-item"
-                ><svg class="footer-icon">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <form class="footer-form" name="signup-form" autocomplete="on">
-          <div class="footer-field">
-            <label class="footer-label" for="subscribe-email">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
-            <div class="input-border">
-              <input
-                class="footer-input"
-                type="email"
-                name="subscribe"
-                id="subscribe-email"
-                placeholder="E-mail"
-              />
-              <button type="submit" class="subscribe-button">
-                Подписаться<svg class="send">
-                  <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+          <div class="footer__invitation">
+              <h3 class="footer__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+            <div class="social footer-social">
+              <a href="#" class="social__link-footer">
+                <svg class="social__icon" width="44" height="44" aria-hidden="true">
+                    <use href="./images/symbol-defs.svg#icon-instagram" class="icon"></use>
                 </svg>
-              </button>
-            </div>
+              </a>
+              <a href="#" class="social__link-footer">
+                <svg class="social__icon-footer" width="44" height="44" aria-hidden="true">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a href="#" class="social__link-footer">
+                <svg class="social__icon-footer" width="44" height="44" aria-hidden="true">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a href="#" class="social__link-footer">
+                <svg class="social__icon-footer" width="44" height="44" aria-hidden="true">
+                    <use href="./images/symbol-defs.svg#icon-linkedin" class="icon"></use>
+                </svg>
+              </a>
+           </div>
           </div>
-        </form>
-      </div>
+          <div class="cta-form">
+            <form class="footer__form" name="signup-form" autocomplete="on">
+            
+                <label class="footer__label" for="subscribe-email">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
+                <div class="footer__input">
+                  <input
+                    class="input"
+                    type="email"
+                    name="subscribe"
+                    id="subscribe-email"
+                    placeholder="E-mail"
+                  />
+                  <button type="submit" class="subscribe-button button">
+                    Подписаться<svg class=" button__icon button__icon--right" width="24" height="24" aria-hidden="true">
+                      <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                    </svg>
+                  </button>
+                </div>
+             </form>
+          </div>
+        </div>
     </footer>
   </body>
 </html>
