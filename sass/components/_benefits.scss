@@ -82,6 +82,9 @@
     background-color: rgba(47, 48, 58, 0.8);
     text-align: center;
     padding: 27px 0;
+    
+}
+&__title {
     font-family: var(--font-family-primary);
     font-style: normal;
     font-weight: 700;
@@ -91,8 +94,6 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--accent-text-color);
-    margin: 0;
 }
-
 
 }
